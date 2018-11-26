@@ -37,13 +37,13 @@ public class ExtractVariableTest {
     @Test
     public void printPrice() {
 
-        BannerRender bannnerRender = new BannerRender();
-        String platform = "MAC";
-        String browser = "IE";
-        bannnerRender.renderBanner(platform,browser);
+        PriceCalculator priceCalculator = new PriceCalculator();
+        int quantity = 1000;
+        int itemPrice = 1000;
+        double price = priceCalculator.getPrice(quantity, itemPrice);
 
-        String expectedText = "MAC: IE\r\n";
+        double expectedPrice = 975100.0;
 
-        assertEquals(expectedText, outContent.toString());
+        assertEquals(expectedPrice, price,0.001);
     }
 }
