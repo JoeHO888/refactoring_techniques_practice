@@ -1,5 +1,6 @@
 package com.tws.refactoring.extract_method;
 
+import com.tws.refactoring.extract_variable.BannerRender;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -42,4 +43,5 @@ public class OwingPrinterTest {
 
         assertEquals(expectedText, outContent.toString());
     }
+
 }

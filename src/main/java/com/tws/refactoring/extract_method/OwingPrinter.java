@@ -19,12 +19,12 @@ public class OwingPrinter {
         // print details
         printDetails(name,outstanding);
     }
-    void printDetails(String name,double outstanding) {
+    private void printDetails(String name,double outstanding) {
         System.out.println("name: " + name);
         System.out.println("amount: " + outstanding);
     }
 
-    void printBanner() {
+    private void printBanner() {
         System.out.println ("*****************************");
         System.out.println ("****** Customer totals ******");
         System.out.println ("*****************************");
