@@ -28,11 +28,6 @@ public class OwingPrinterTest {
 
     @Test
     public void printOwing() {
-//        System.out.print("*****************************\n"+
-//                "****** Customer totals ******\n"+
-//                "*****************************\n"+
-//                "name: " + "Apple\n"+
-//                "amount: 1");
 
         OwingPrinter owingPrinter = new OwingPrinter();
         List<Order> orders = Arrays.asList(new Order(1));
